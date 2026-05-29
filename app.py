@@ -27,7 +27,6 @@ scenario_multiplier = {"Base":1.0, "Mild Stress":1.35, "Severe Stress":1.85}[sce
 
 st.title("🏦 Credit Risk Analytics & IFRS9 Modelling Platform")
 st.caption(f"Author: {AUTHOR}")
-st.info("📌 This dashboard has multiple tabs. Please click each numbered tab below to view detailed modules: Executive Overview, Portfolio Quality, IFRS9 ECL, Stress Testing, Early Warning, Model Validation, and Management Actions.")
 
 df["pd_stressed"] = np.clip(df["pd_12m"] * scenario_multiplier, 0.001, 0.95)
 df["lgd_stressed"] = np.clip(df["lgd"] * (1 + (scenario_multiplier - 1) * 0.35), 0.05, 0.95)
@@ -53,6 +52,8 @@ else:
     c3.metric("Stressed ECL", f"{stressed_ecl:,.1f} bn VND", delta=f"{stressed_ecl-total_ecl:,.1f}")
     c4.metric("Weighted PD", f"{weighted_pd*100:.2f}%")
     c5.metric("Stage 2+3 exposure", f"{stage23*100:.2f}%")
+
+st.info("📌 This dashboard has multiple tabs. Please click each numbered tab below to view detailed modules:")
 
 tabs = st.tabs([
     "1️⃣ Executive Overview",
