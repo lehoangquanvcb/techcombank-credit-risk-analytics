@@ -1,7 +1,8 @@
-year,gdp_growth_pct,inflation_pct,policy_rate_pct,usd_vnd,bond_yield_10y_pct,credit_growth_pct,source
-2020,2.91,3.23,4,23175,3,12.1,World Bank / SBV public references
-2021,2.58,1.84,4,22840,2.1,13.5,World Bank / SBV public references
-2022,8.02,3.15,6,23630,4.8,14.5,World Bank / SBV public references
-2023,5.05,3.25,4.5,24265,2.9,13.7,World Bank / SBV public references
-2024,7.09,3.63,4.5,25300,2.8,15.1,Public macro references / illustrative
-2025,8.02,3.51,4.5,26100,4.3,19.00,Public macro references / illustrative
+year,gdp_growth_pct,inflation_pct,policy_rate_pct,usd_vnd,bond_yield_10y_pct,credit_growth_pct
+2020,2.91,3.23,4.0,23175,3.0,12.1
+2021,2.58,1.84,4.0,22840,2.1,13.5
+2022,8.02,3.15,6.0,23630,4.8,14.5
+2023,5.05,3.25,4.5,24265,2.9,13.7
+2024,7.09,3.63,4.5,25300,2.8,15.1
+2025,8.02,3.5,4.5,25550,2.9,16.0
+2026,7.2,4.0,5.0,26200,3.2,15.0

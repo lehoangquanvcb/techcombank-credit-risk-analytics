@@ -1,24 +1,18 @@
-
 # Model Governance Pack
 
-## Model Objective
-Estimate credit risk, IFRS9 expected credit loss, stress impact, and early warning signals for a commercial bank portfolio.
+Author: Le Hoang Quan
+
+## Objective
+Prototype credit risk analytics and IFRS9 ECL model for commercial bank portfolio monitoring.
 
 ## Scope
-Corporate, SME, retail mortgage, and consumer finance exposures using synthetic data for demonstration.
+PD, LGD, EAD, IFRS9 staging, ECL, stress testing, early warning and model validation.
 
-## Model Components
-- PD model: scorecard/logistic regression/challenger XGBoost
-- LGD model: collateral and LTV-driven downturn LGD
-- EAD model: outstanding balance plus credit conversion factor for undrawn commitments
-- IFRS9 ECL: Stage 1 12-month ECL; Stage 2/3 lifetime ECL
-- Stress testing: Base, Mild Stress, Severe Stress macro scenarios
+## User Guidance
+Users should click each numbered tab/module to view detailed assumptions, calculations, model outputs and management actions.
 
-## Validation
-- Discrimination: AUC, Gini, KS
-- Stability: PSI
-- Calibration: Brier score and actual-vs-predicted default buckets
-- Governance: independent validation and approval workflow
+## Mobile Guidance
+For Streamlit, choose Mobile friendly mode from the sidebar. This mode stacks KPI cards and charts for small screens.
 
 ## Limitations
-This package uses synthetic loan-level data. Real-life use requires audited bank data, data lineage checks, model validation, regulatory review, and approval by model risk governance.
+Synthetic data is used for demonstration. Replace with actual internal bank data before business use.
